@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N's VS Code</title>
+    <script src="https://kit.fontawesome.com/51d4157dc4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '426px',
+                    md: '760px',
+                    lg: '1440px'
+
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="pone" class="sticky top-0 px-[30px] bg-[#2C2C31] flex justify-between  md:px-[50px] lg:px-[150px]">
+        <div id="one" class="flex gap-[10px] my-[10px]">
+            <img class="h-[20px] cursor-pointer md:h-[23px] lg:h-[25px]" src="./assets/part1/logo.png" alt="">
+            <p class="text-[12px] text-white cursor-pointer md:text-[15px] lg:text-[16px]">Visual Studio Code</p>
+        </div>
+        <ul class="text-[#ABABAD] hidden text-[13px]  my-[13px] lg:block  lg:flex  lg:text-[15px] lg:gap-[22px]">
+            <li class="cursor-pointer hover:text-white">Docs</li>
+            <li class="cursor-pointer hover:text-white">Updates</li>
+            <li class="cursor-pointer hover:text-white">Blog</li>
+            <li class="cursor-pointer hover:text-white">API</li>
+            <li class="cursor-pointer hover:text-white">Extensions</li>
+            <li class="cursor-pointer hover:text-white">FAQ</li>
+            <li class="cursor-pointer hover:text-white">Learn</li>
+        </ul>
+        <p class="cursor-pointer pr-[4px] mt-[10px] text-white  hidden sm:block md:pr-[30px]  lg:hidden"><i
+                class="fa-solid fa-bars"></i></p>
+        <div id="two" class="flex hidden lg:block lg:flex">
+            <button
+                class="text-[#ABABAD] text-[10px] border-2 border-[#525256] px-[0px] bg-[#525256] h-[50px] hover:bg-[#3C3C3C] lg:text-[14px] lg: px-[45px] lg:h-[50px]">Search
+                Docs</button>
+            <button
+                class="text-white border-2 px-[45px] border-2 border-[#0066B8] bg-[#0066B8] h-[50px] hover:bg-[#00579B]">Download</button>
+        </div>
+    </div>
+    <div id="ptwo">
+        <p class="bg-[#25252A] text-center text-[9px] text-[#CCCCCC] py-[10px] md:text-[13px] lg:text-[14.5px]"><span
+                class="cursor-pointer text-[#0098FF] underline underline-offset-4 hover:no-underline ">Version
+                1.85</span> is now available! Read about the new features and fixes from November.</p>
+    </div>
+    <div id="three" class="flex  py-[40px] px-[150px] bg-[#2C2C31] sm:flex flex-col sm:px-[20px] sm:py-[0px] lg:flex lg:flex-row lg:py-[40px]">
+        <div id="left" class="  w-[40%] w-[200px] flex flex-col gap-[8px] my-[40px] sm:w-[100%] lg:w-[40%] lg:w-[200px] lg:gap-[8px] lg:my-[40px] ">
+            <p class="text-[#F5F5F5] text-[45px] text-center sm:text-[16px] md:text-[18px] lg:text-[45px]">Code editing.</p>
+            <p class="text-[#F5F5F5] font-bold text-[45px] text-center sm:text-[16px md:text-[18px] lg:text-[45px]">Redefined.</p>
+            <p class="text-[#ABABAD] text-[17px] text-center sm:text-[14px] md:text-[16px] lg:text-[17px]">Free. Built on open source. Runs everywhere.</p>
+            <div class="flex gap-[3px] mx-[70px] my-[15px] sm:mx-[85px] md:mx-[240px] lg:gap-[3px] lg:mx-[140px] lg:my-[15px] ">
+                <div >
+                    <p class="border-2 border-[#0066B8] color-[#0066B8] bg-[#0066B8] text-white font-semibold text-[17px] px-[10px] pt-[4px] text-center sm:text-[12px] md:text-[14px] lg:text-[17px] lg:px-[10px] lg:pt-[4px] hover:cursor-pointer">Download Mac Universal</p>
+                    <p class="border-2 border-[#0066B8] color-[#0066B8] bg-[#0066B8] text-white  text-[13px] text-center pb-[4px] sm:text-[10px] lg:text-[13px] lg:pb-[4px] hover:cursor-pointer">Stable Build</p>
+                </div>
+                <p><i class="fa-solid fa-angle-down border-2 border-[#0066B8] color-[#0066B8] bg-[#0066B8] text-white  text-[20px] text-center py-[18.5px] px-[10px] sm:text-[8px] md:text-[10px] lg:text-[20px] lg:py-[18.5px] lg:px-[10px] hover:cursor-pointer"></i></p>
+            </div>
+            <p class="rounded-md border-2 border-[#25252A] bg-[#25252A] mx-[60px] mb-[10px] py-[5px] text-center text-[14px] text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B] sm:text-[11px] md:text-[13px] md:mx-[220px]  lg:my-[10px] lg:mb-[10px] lg:py-[5px] lg:text-[14px] lg:mx-[130px]">Web, insiders edition <span class="text-[#838386]">or</span> other platforms</p>
+            <p class="text-center text-[#939396] text-[12px] sm:text-[10px] md:text-[11px] lg:text-[12px]">By using VS Code, you agree to its</p>
+            <p class="text-[12px] text-center text-[#0098FF] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B] sm:text-[10px] md:text-[11px] lg:text-[12px]">license and privacy statement</p>
+        </div>
+        <div id="right" class="">
+            <img class="h-[480px] w-[800px] mb-[0px] sm:h-[250px] sm:mb-[30px] md:h-[380px] md:w-[750px] lg:h-[480px] lg:w-[800px] lg:mb-[0px] " src="./assets/part2/home-screenshot-mac-2x.png" />
+        </div>
+
+    </div>
+        <div id="four" class="flex gap-[30px] px-[20px] py-[25px]">
+            <div
+                class="cursor-pointer relative inline-block  w-1/4 flex flex-col items-center justify-center lg:ml-[60px] ">
+                <img class=" w-[30px] first-image lg:w-[50px]" src="./assets/part4/bulb.jpg" alt="">
+                <!-- <img class="h-[50px] second-image opacity-0 transition-opacity ease-in-out duration-300 absolute top-0 left-0" src="./assets/part4/one.jpg" alt=""> -->
+                <p class="text-[13px] mt-[3px] lg:text-[18px]">IntelliSense</p>
+            </div>
+            <div class="cursor-pointer w-1/4 lg:ml-[40px] ">
+                <img class="h-[30px] ml-[16px] md:ml-[55px] lg:h-[50px]" src="./assets/part4/bee.jpg" alt="">
+                <p class="text-[13px] mt-[3px] text-center lg:text-[18px] lg:mr-[110px]">Run and Debug</p>
+            </div>
+            <div class="cursor-pointer w-1/4 ">
+                <img class="h-[30px] ml-[16px] md:ml-[55px] lg:h-[50px]" src="./assets/part4/dots.jpg" alt="">
+                <p class="text-[13px] mt-[4px] md:ml-[40px] lg:text-[18px]">Built-in Git</p>
+
+            </div>
+            <div class="cursor-pointer w-1/4 lg:mr-[20px] ">
+                <img class="h-[30px] ml-[16px] md:ml-[60px] lg:h-[50px]" src="./assets/part4/cubes.jpg" alt="">
+                <p class="text-[13px] mt-[4px] md:ml-[50px] lg:text-[18px]">Extensions</p>
+            </div>
+        </div>
+        <div id="five"
+            class="bg-[#F5F5F5] flex flex-col py-[40px] gap-[0px] md:py-[60px] lg:flex-row lg:px-[150px] lg:pt-[80px] lg:pb-[60px] lg:gap-[100px] lg:pl-[180px]">
+            <img class="h-[150px] md:h-[200px] lg:h-[240px]" src="./assets/part5/home-intellisense.svg" alt="">
+            <div class="flex flex-col gap-[10px] lg:gap-[28px]">
+                <p
+                    class="text-[#646464] text-[15px] text-center md:text-[22px] lg:text-left lg:ml-[60px] lg:text-[29px]">
+                    Meet IntelliSense.</p>
+                <p
+                    class="text-[#646464] text-[12px] text-center px-[60px] md:text-[18px] lg:text-left lg:leading-loose lg:text-[17px]">
+                    Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions
+                    based on variable types, function definitions, and imported modules.</p>
+            </div>
+        </div>
+        <div id="six"
+            class="bg-white flex flex-col py-[40px] gap-[30px] md:gap-[40px] md:py-[60px] lg:flex-row lg:px-[150px] lg:pt-[80px] lg:pb-[60px] lg:gap-[100px] lg:pl-[110px]">
+            <div class="flex flex-col gap-[10px] lg:gap-[28px]">
+                <p
+                    class="text-[#646464] text-[15px] text-center md:text-[22px] lg:text-left lg:ml-[60px] lg:text-[29px]">
+                    Print statement debugging is a thing of the past.
+                </p>
+                <p
+                    class="text-[#646464] text-[12px] text-center px-[60px] md:text-[18px] lg:text-left lg:leading-loose lg:text-[17px]">
+                    Debug code right from the editor. Launch or attach to your running apps and debug with break points,
+                    call stacks, and an interactive console.</p>
+            </div>
+            <img class="h-[150px] md:h-[200px] lg:h-[240px]" src="./assets/part6/home-debug.svg" alt="">
+        </div>
+        <div id="seven"
+            class="bg-[#F5F5F5] flex flex-col py-[40px] gap-[0px] md:py-[60px] lg:flex-row lg:px-[150px] lg:pt-[80px] lg:pb-[60px] lg:gap-[100px] lg:pl-[180px]">
+            <img class="h-[150px] md:h-[200px] lg:h-[240px]" src="./assets/part7/home-git.svg" alt="">
+            <div class="flex flex-col gap-[10px] lg:gap-[28px]">
+                <p
+                    class="text-[#646464] text-[15px] text-center md:text-[22px] lg:text-left lg:ml-[60px] lg:text-[29px]">
+                    Git commands built-in.</p>
+                <p
+                    class="text-[#646464] text-[12px] text-center px-[60px] md:text-[18px] lg:text-left lg:leading-loose lg:text-[17px]">
+                    Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make
+                    commits right from the editor. Push and pull from any hosted SCM service.</p>
+            </div>
+        </div>
+        <div id="eight"
+            class="bg-white flex flex-col py-[40px] gap-[30px] md:gap-[40px] md:py-[60px] lg:flex-row lg:px-[150px] lg:pt-[80px] lg:pb-[60px] lg:gap-[0px] lg:pl-[110px] lg:pr-[10px]">
+            <div class="flex flex-col gap-[10px] lg:gap-[28px]">
+                <p
+                    class="text-[#646464] text-[15px] text-center md:text-[22px] lg:text-left lg:ml-[60px] lg:text-[29px]">
+                    Extensible and customizable.</p>
+                <p
+                    class="text-[#646464] text-[12px] text-center px-[60px] md:text-[18px] lg:text-left lg:leading-loose lg:text-[17px]">
+                    Want even more features? Install extensions to add new languages, themes, debuggers, and to connect
+                    to additional services. Extensions run in separate processes, ensuring they won't slow down your
+                    editor. <span
+                        class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">Learn
+                        more about extensions.</span></p>
+            </div>
+            <img class="h-[120px] w-[190px] mx-[110px] md:h-[160px] md:w-[250px] md:mx-[250px] lg:h-[220px] lg:w-[350px] lg:ml-[110px] lg:mr-[150px]"
+                src="./assets/part8/Hundreds-of-Extensions.png" alt="">
+        </div>
+        <div id="nine"
+            class="bg-[#F5F5F5] flex flex-col py-[40px] gap-[0px] md:py-[60px] lg:flex-row lg:px-[150px] lg:pt-[80px] lg:pb-[60px] lg:gap-[100px] lg:pl-[180px]">
+            <img class="h-[150px] md:h-[200px] lg:h-[240px]" src="./assets/part9/home-azure.svg" alt="">
+            <div class="flex flex-col gap-[10px] lg:gap-[28px]">
+                <p
+                    class="text-[#646464] text-[15px] text-center md:text-[22px] lg:text-left lg:ml-[60px] lg:text-[29px]">
+                    Deploy with confidence and ease</p>
+                <p
+                    class="text-[#646464] text-[12px] text-center px-[60px] md:text-[18px] lg:text-left lg:leading-loose lg:text-[17px]">
+                    With <span
+                        class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">Microsoft
+                        Azure</span> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites,
+                    store and query relational and document based data, and scale with serverless computing, all with
+                    ease,<span
+                        class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">
+                        all from within VS Code</span>.</p>
+            </div>
+        </div>
+        <div id="ten" class="py-[40px] flex flex-col gap-[20px] lg:gap-[40px]  ">
+            <p class="text-center text-[16px] md:text-[22px] lg:text-[#646464] lg:text-[28px]">VS Code for</p>
+            <div class="flex gap-[40px] px-[110px] md:gap-[80px] md:px-[250px] lg:flex-col lg:gap-[20px]">
+                <div class="flex flex-col lg:flex-row lg:gap-[50px] lg:ml-[100px]">
+                    <div class="flex">
+                        <img src="./assets/part10/javascript.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">JavaScript</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/python.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">Python</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/java.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">Java</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/markdown.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">Markdown</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/typescript.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">TypeScript</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/cpp.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">C/C++</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:gap-[50px] lg:ml-[140px]">
+                    <div class="flex">
+                        <img src="./assets/part10/json.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">JSON</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/powershell.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">Powershell</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/html.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">HTML/CSS</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/csharp.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">C#</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/php.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">PHP</p>
+                    </div>
+                    <div class="flex">
+                        <img src="./assets/part10/yaml.svg" alt="">
+                        <p class="text-[12px] md:text-[16px] lg:text-[17px]">YAML</p>
+                    </div>
+                </div>
+            </div>
+            <p
+                class="text-[12px] text-center text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B] md:text-[18px] lg:text-[17px] lg:ml-[50px]">
+                and many more languages on the Marketplace...</p>
+            <button
+                class="text-[12px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[50px] px-[20px] mx-[140px]  hover:bg-[#00579B] md:text-[17px] md:mx-[280px] lg:mx-[630px]">Get
+                Started Now</button>
+        </div>
+        <!-- <div id="eleven" class="pt-[50px] pb-[0px] flex flex-col gap-[20px] lg:gap-[40px] bg-[#F5F5F5]">
+            <div id="p1" class="border-2 border-black">
+                <img class="h-[100px] w-[100px]" src="./assets/part11/windows-logo.png" />
+                <div
+                    class="text-[12px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[65px] px-[40px]  py-[10px]  hover:bg-[#00579B] md:text-[17px] md:mx-[280px] lg:mx-[630px] flex flex-col gap-[4px] items-center cursor-pointer">
+                    <div class="flex items-center gap-[8px]">
+                        <img class="h-[16px] w-[16px]" src="./assets/part11/download (1).svg" />
+                        <p class="">Windows</p>
+                    </div>
+                    <div class="text-[10px]">Windows 10 11</div>
+                </div>
+                <div class="flex gap-[10px]">
+                    <div class="flex border-2 border-black px-[100px] flex-col gap-[5px] items-center justify-center">
+                        <p class="font-bold">User</p>
+                        <p class="font-bold">System</p>
+                        <p class="font-bold">.zip</p>
+                        <p class="font-bold">CLI</p>
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <p
+                            class="rounded-sm text-[11px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] hover:bg-[#00579B] md:text-[11px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            x64</p>
+                        <p
+                            class="rounded-sm text-[11px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[10px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            x64</p>
+                        <p
+                            class="rounded-sm text-[11px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[10px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            x64</p>
+                        <p
+                            class="rounded-sm text-[11px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[10px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            x64</p>
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <p
+                            class="rounded-sm text-[10px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[13px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            Arm64</p>
+                        <p
+                            class="rounded-sm text-[10px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[13px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            Arm64</p>
+                        <p
+                            class="rounded-sm text-[10px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[13px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            Arm64</p>
+                        <p
+                            class="rounded-sm text-[10px] text-bold text-white border-2  border-2 border-[#0066B8] bg-[#0066B8] h-[20px] px-[13px] mx-[180px] py-[0px]  hover:bg-[#00579B] md:text-[11px] md:mx-[600px] lg:mx-[700px] flex flex-col gap-[4px] items-center cursor-pointer">
+                            Arm64</p>
+                    </div>
+                </div>
+            </div>
+            <div id="p2">
+
+            </div>
+            <div id="p3">
+
+            </div>
+
+        </div> -->
+        <div id="twelve" class="bg-[#F5F5F5] pt-[30px] pb-[30px] lg:pb-[60px]">
+            <div class="flex flex-col gap-[20px] lg:flex-row lg:px-[320px] lg:gap-[350px]">
+                <div class="flex flex-col lg:flex-col lg:gap-[10px]">
+                    <p class=" text-center font-semibold text-[12px] md:text-[15px] lg:text-[16px] ">Want new features
+                        sooner?</p>
+                    <p class="text-center text-[12px]  md:text-[15px] lg:text-[13px]">Get the <span
+                            class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">Insiders
+                            build</span> instead.</p>
+                </div>
+                <div class="flex flex-col  lg:flex-col lg:gap-[10px]">
+                    <p class="text-center font-semibold text-[12px]  md:text-[15px] lg:text-[16px]">Use <span
+                            class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">vscode.dev</span>
+                        for quick edits<br> online!</p>
+                    <p class="text-center text-[12px]  md:text-[15px] lg:text-[13px]">GitHub, Azure Repos, and local
+                        files.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="thirteen" class="bg-[#F5F5F5] pb-[40px]">
+            <p class="font-semibold text-[16px] text-center md:text-[22px] lg:text-[16px]">License and Privacy Terms</p>
+            <p
+                class="text-[12px] mt-[10px] px-[20px] text-center leading-relaxed md:text-[15px] md:px-[50px] lg:text-[13px] lg:px-[300px] lg:leading-loose">
+                By downloading and using Visual Studio Code, you agree to the <span
+                    class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">license
+                    terms</span> and <span
+                    class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">privacy
+                    statement</span>. VS Code automatically sends telemetry data and crash dumps to help us improve the
+                product. If you would prefer not to have this data sent please go see <span
+                    class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">How
+                    to Disable Crash Reporting</span> to learn how to disable it. Third party licenses for the CLI can
+                be <span
+                    class="text-[#0171BC] hover:cursor-pointer hover:underline hover:underline-offset-3 hover:text-[#00579B]">found
+                    here</span>.</p>
+        </div>
+        <div id="fourteen"
+            class="bg-[#333333] flex flex-col gap-[30px] py-[30px] lg:flex-row lg:justify-between lg:py-[25px] lg:px-[150px] lg:gap-[70px]">
+            <div class="text-center flex flex-col gap-[5px] lg:flex-row lg:gap-[30px] lg:items-center">
+                <p class="text-[#9A9A9A] text-[13px]">Hello from Seattle.</p>
+                <p class="text-[#9A9A9A] text-[13px] cursor-pointer hover:text-[#C062CD]">Follow @code</p>
+                <div>
+                    <button
+                        class="border-2 border-[#9A9A9A] bg-[#9A9A9A] rounded text-[10px] cursor-pointer lg:px-[7px] ">Star</button>
+                    <button
+                        class="border-2 border-[#9A9A9A] bg-[#9A9A9A] rounded text-[10px] cursor-pointer hover:text-[#005BA4] lg:px-[5px]">155,078</button>
+                </div>
+            </div>
+            <div class="text-center flex flex-col gap-[5px] lg:flex-row lg:gap-[30px] lg:items-center">
+                <p class="text-[#9A9A9A] text-[13px] cursor-pointer hover:text-[#C062CD]">Support</p>
+                <p class="text-[#9A9A9A] text-[13px] cursor-pointer hover:text-[#C062CD]">Privacy</p>
+                <p class="text-[#9A9A9A] text-[13px] cursor-pointer hover:text-[#C062CD]">Terms of Use</p>
+                <p class="text-[#9A9A9A] text-[13px] cursor-pointer hover:text-[#C062CD]">License</p>
+                <div class="flex flex-col gap-[5px]">
+                    <img class="h-[20px] w-[100px] ml-[165px] md:ml-[330px] lg:ml-[0px]"
+                        src="./assets/part14/microsoft-logo.png" alt="">
+                    <p class="text-[#9A9A9A] text-[14px] lg:text-[12px]">&copy; 2024 Microsoft</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
